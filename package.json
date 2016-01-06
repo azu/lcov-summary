@@ -1,0 +1,55 @@
+{
+  "name": "lcov-summary",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azu/lcov-summary.git"
+  },
+  "author": "azu",
+  "email": "azuciao@gmail.com",
+  "homepage": "https://github.com/azu/lcov-summary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/lcov-summary/issues"
+  },
+  "version": "1.0.0",
+  "description": "cat locv.info and show summary.",
+  "main": "lib/lcov-summary.js",
+  "bin": {
+    "lcov-summary": "bin/cmd.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "src"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "prepublish": "npm run --if-present build",
+    "lcov-summary": "npm run build && bin/cmd.js test/fixtures/lcov.info",
+    "test": "mocha"
+  },
+  "keywords": [
+    "lcov",
+    "console",
+    "reporter",
+    "formatter",
+    "terminal",
+    "text"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "concat-stream": "^1.5.1",
+    "lcov-parse": "0.0.10",
+    "object.assign": "^4.0.3",
+    "sprintf-js": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.3.13"
+  }
+}
