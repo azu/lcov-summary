@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/azu/lcov-summary/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cat lcov file and show summary of coverage to terminal.",
   "main": "lib/lcov-summary.js",
   "bin": {
