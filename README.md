@@ -1,6 +1,6 @@
 # lcov-summary
 
-Cat locv.info and show summary to terminal.
+Cat lcov file and show summary of coverage to terminal.
 
 ## Installation
 

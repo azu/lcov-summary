@@ -12,7 +12,7 @@
     "url": "https://github.com/azu/lcov-summary/issues"
   },
   "version": "1.0.0",
-  "description": "Cat locv.info and show summary to terminal.",
+  "description": "Cat lcov file and show summary of coverage to terminal.",
   "main": "lib/lcov-summary.js",
   "bin": {
     "lcov-summary": "bin/cmd.js"
